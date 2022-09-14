@@ -1,3 +1,15 @@
+# Requirements
+For the BE:
+- Ruby (recommended version 3.0.3, also rvm is suggested)
+  - rvm: https://rvm.io/rvm/install
+- MySql (recommended version 8.0.26)
+  - https://dev.mysql.com/downloads/mysql/
+- Rails (`>= v6.1.6.1`): 
+  - `gem install rails` (once ruby is installed)
+
+For the FE
+- Node >= v14.17.0
+- Yarn: `npm install --global yarn` (can just use npm if preferred)
 # Getting started
 
 Clone the git repository
