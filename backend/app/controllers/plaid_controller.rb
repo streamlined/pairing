@@ -31,7 +31,11 @@ class PlaidController < ApplicationController
     access_token = response.access_token
 
     token = PlaidCredential.first
-    PlaidCredential.create!(access_token: access_token) if token.nil?
+    if token.nil?
+      PlaidCredential.create!(access_token: access_token)
+    else
+      token.update!(access_token: access_token)
+    end
 
     render json: {
       message: "access_token is stored in backend."},
