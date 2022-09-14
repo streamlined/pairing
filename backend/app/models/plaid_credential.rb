@@ -1,0 +1,2 @@
+class PlaidCredential < ApplicationRecord
+end
